@@ -2,79 +2,61 @@
 <html lang="en">
 <head>
   <meta charset="utf-8">
-
   <title>Maximo Mena - Resume</title>
-
-  <!-- Enter a brief description of your page -->
-  <meta name="description" content="">
-
-  <!-- Define a viewport to mobile devices to use - telling the browser to assume that the page is as wide as the device (width=device-width) and setting the initial page zoom level to be 1 (initial-scale=1.0) -->
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-  <!-- Include the site stylesheet -->
   <link href="css/style.css" rel="stylesheet" media="all">
-
-  <!-- Include the HTML5 shiv print polyfill for Internet Explorer browsers 8 and below -->
-  <!--[if lt IE 9]><script src="js/html5shiv-printshiv.js" media="all"></script><![endif]-->
 </head>
 <body>
-
-<!-- If you want to use an element as a wrapper, i.e. for styling only, then <div> is still the element to use -->
 <div class="wrap">
 
-  <!-- The page header typically contains items such as your site heading, logo and possibly the main site navigation -->
-  <!-- ARIA: the landmark role "banner" is set as it is the prime heading or internal title of the page -->
-  <header role="banner">
-
-    <div class="header-left">
-      <h1 class="full-name">Maximo Mena</h1>
-      <h2 class="profession">Web Developer</h2>
-    </div>
-
-    <div class="header-right">
-      <ul class="social-media-icons">
-        <li><a href="#" title="">GitHub</a></li>
-        <li><a href="#" title="">LinkedIn</a></li>
-        <li><a href="#" title="">Twitter</a></li>
-      </ul>
-    </div>
-
-  </header>
-
-  <!-- The <main> element is used to enclose the main content, i.e. that which contains the central topic of a document -->
-  <!-- ARIA: the landmark role "main" is added here as it contains the main content of the document, and it is recommended to add it to the
-  <main> element until user agents implement the required role mapping. -->
   <main role="main">
 
-    <section class="content-top">
-      <div class="photo">
-        <img src="images/photo.jpg" alt="">
-      </div>
-      <div class="photo">
-        <blockquote>Lorem ipsum</blockquote>
-        <p>Lorem Ipsum</p>
-      </div>
-      <div class="contact-info">
-        <h3>Available for:</h3>
-        <p>Hire and freelance</p>
-      </div>
-    </section>
+    <div class="content">
+
+      <section class="photo">
+        <p>Photo</p>
+      </section>
+
+      <section class="bio">
+        <h1>Maximo Mena</h1>
+      </section>
+
+      <section class="contact">
+        <p>Contact</p>
+      </section>
+
+      <section class="skills">
+        <p>Skills</p>
+      </section>
+
+      <section class="experience">
+        <p>Experience</p>
+      </section>
+
+      <section class="education">
+        <p>Educaton</p>
+      </section>
+
+      <section class="extracurricular">
+        <p>Extracurricular</p>
+      </section>
+
+    </div>
+
+    <div class="sidebar">
+      <section class="photo">
+        <p>Photo</p>
+      </section>
+      <section class="contact">
+        <p>Contact</p>
+      </section>
+      <section class="skills">
+        <p>Skills</p>
+      </section>
+    </div>
 
   </main>
 
-  <!-- The main page footer can contain items such as copyright and contact information. It can also contain a duplicated navigation of your site which is not usually contained within a <nav> -->
-  <!-- ARIA: the landmark role "contentinfo" is added here as it contains metadata that applies to the parent document -->
-  <footer role="contentinfo">
-
-    <!-- Copyright information can be contained within the <small> element. The <time> element is used here to indicate that the '2015' is a date -->
-    <small>Copyright &copy; <time datetime="2015">2015</time></small>
-
-  </footer>
-
-
 </div>
-
-
-
 </body>
 </html>

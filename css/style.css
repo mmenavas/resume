@@ -266,53 +266,51 @@ th {
   padding: 0;
 }
 
-/* line 14, ../sass/_grids.scss */
-.wrap {
-  max-width: 40em;
+/* line 15, ../sass/_grids.scss */
+main {
+  max-width: 960px;
   margin-left: auto;
   margin-right: auto;
+  background-color: #f8f8f8;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  overflow: hidden;
 }
 /* line 12, ../../../../../../../Library/Ruby/Gems/2.0.0/gems/susy-2.2.2/sass/susy/output/support/_clearfix.scss */
-.wrap:after {
+main:after {
   content: " ";
   display: block;
   clear: both;
 }
-
 /* line 18, ../sass/_grids.scss */
-header {
-  max-width: 100%;
-  margin-left: auto;
-  margin-right: auto;
-  background-color: #ccc;
+main .content {
+  flex: 0 1 auto;
 }
-/* line 12, ../../../../../../../Library/Ruby/Gems/2.0.0/gems/susy-2.2.2/sass/susy/output/support/_clearfix.scss */
-header:after {
-  content: " ";
-  display: block;
-  clear: both;
-}
-/* line 21, ../sass/_grids.scss */
-header .header-left {
-  background-color: #eee;
-}
-@media (min-width: 20em) {
-  /* line 21, ../sass/_grids.scss */
-  header .header-left {
-    width: 65.51724%;
+@media (min-width: 720px) {
+  /* line 18, ../sass/_grids.scss */
+  main .content {
+    width: 66.10169%;
     float: left;
-    margin-right: 3.44828%;
+    margin-right: 1.69492%;
+  }
+  /* line 22, ../sass/_grids.scss */
+  main .content .photo, main .content .contact, main .content .skills {
+    display: none;
   }
 }
-/* line 28, ../sass/_grids.scss */
-header .header-right {
-  background-color: #ddd;
+/* line 29, ../sass/_grids.scss */
+main .sidebar {
+  display: none;
+  background-color: #d8d8d8;
+  flex: 0 1 auto;
 }
-@media (min-width: 20em) {
-  /* line 28, ../sass/_grids.scss */
-  header .header-right {
-    width: 31.03448%;
+@media (min-width: 720px) {
+  /* line 29, ../sass/_grids.scss */
+  main .sidebar {
+    width: 32.20339%;
     float: right;
     margin-right: 0;
+    display: block;
   }
 }
