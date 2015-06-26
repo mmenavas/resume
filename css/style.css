@@ -266,12 +266,35 @@ th {
   padding: 0;
 }
 
-/* line 15, ../sass/_grids.scss */
+@media print {
+  /* line 16, ../sass/_grids.scss */
+  html, body, .wrap {
+    padding: 0 !important;
+    margin: 0 !important;
+  }
+
+  /* line 20, ../sass/_grids.scss */
+  main {
+    box-shadow: none !important;
+    background-color: #fff !important;
+  }
+
+  /* line 24, ../sass/_grids.scss */
+  .sidebar {
+    background-color: #fff !important;
+  }
+
+  /* line 27, ../sass/_grids.scss */
+  .languages {
+    margin-bottom: 40px;
+  }
+}
+/* line 32, ../sass/_grids.scss */
 main {
   max-width: 960px;
   margin-left: auto;
   margin-right: auto;
-  background-color: #f8f8f8;
+  background-color: #fff;
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
@@ -283,34 +306,249 @@ main:after {
   display: block;
   clear: both;
 }
-/* line 18, ../sass/_grids.scss */
+/* line 35, ../sass/_grids.scss */
 main .content {
+  width: 100%;
   flex: 0 1 auto;
 }
 @media (min-width: 720px) {
-  /* line 18, ../sass/_grids.scss */
+  /* line 35, ../sass/_grids.scss */
   main .content {
-    width: 66.10169%;
+    width: 62.02532%;
     float: left;
-    margin-right: 1.69492%;
+    margin-right: 1.26582%;
   }
-  /* line 22, ../sass/_grids.scss */
-  main .content .photo, main .content .contact, main .content .skills {
+  /* line 40, ../sass/_grids.scss */
+  main .content .photo, main .content .contact, main .content .skills, main .content .languages, main .content .hobbies {
     display: none;
   }
 }
-/* line 29, ../sass/_grids.scss */
+/* line 47, ../sass/_grids.scss */
 main .sidebar {
+  width: 100%;
   display: none;
-  background-color: #d8d8d8;
   flex: 0 1 auto;
 }
 @media (min-width: 720px) {
-  /* line 29, ../sass/_grids.scss */
+  /* line 47, ../sass/_grids.scss */
   main .sidebar {
-    width: 32.20339%;
+    width: 36.70886%;
     float: right;
     margin-right: 0;
     display: block;
   }
+}
+
+@media (min-width: 720px) {
+  /* line 7, ../sass/style.scss */
+  body {
+    padding: 20px;
+  }
+}
+
+/* line 13, ../sass/style.scss */
+ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+/* line 19, ../sass/style.scss */
+main {
+  background-color: #f8f8f8;
+  box-shadow: 10px 10px 5px #888888;
+}
+
+/* line 24, ../sass/style.scss */
+.content,
+.sidebar {
+  padding: 20px;
+}
+
+/* line 29, ../sass/style.scss */
+.sidebar {
+  background-color: #DBECF7;
+}
+
+/* line 33, ../sass/style.scss */
+h3 {
+  color: #0073cc;
+}
+
+/* line 34, ../sass/style.scss */
+h4 {
+  color: #45a3de;
+}
+
+/* line 35, ../sass/style.scss */
+h5 {
+  color: #555;
+}
+
+/* line 37, ../sass/style.scss */
+section {
+  padding-bottom: 10px;
+}
+
+/* line 41, ../sass/style.scss */
+.invisible {
+  visibility: hidden;
+}
+
+/* line 45, ../sass/style.scss */
+.photo {
+  text-align: center;
+}
+/* line 47, ../sass/style.scss */
+.photo img {
+  width: 100%;
+  border-radius: 50%;
+  max-width: 240px;
+}
+@media (min-width: 720px) {
+  /* line 47, ../sass/style.scss */
+  .photo img {
+    max-width: 180px;
+  }
+}
+
+/* line 57, ../sass/style.scss */
+.bio {
+  font-family: "Consolas", "Menlo", "Courier", monospace;
+  text-align: center;
+}
+@media (min-width: 720px) {
+  /* line 57, ../sass/style.scss */
+  .bio {
+    text-align: left;
+  }
+}
+/* line 63, ../sass/style.scss */
+.bio .name {
+  font-size: 2.4em;
+  font-weight: normal;
+  margin: 0;
+}
+/* line 68, ../sass/style.scss */
+.bio .title {
+  font-size: 2em;
+  font-weight: bold;
+  margin: 0;
+}
+
+/* line 76, ../sass/style.scss */
+.contact li {
+  line-height: 2em;
+  font-size: 90%;
+}
+/* line 80, ../sass/style.scss */
+.contact i.fa {
+  font-size: 1.5em;
+  width: 28px;
+  text-align: center;
+}
+
+/* line 90, ../sass/style.scss */
+.skills li,
+.languages li,
+.hobbies li {
+  background-color: #55b3ee;
+  color: #fff;
+  margin: 4px 0;
+}
+/* line 95, ../sass/style.scss */
+.skills span,
+.languages span,
+.hobbies span {
+  display: block;
+  padding: 5px 10px;
+  background-color: #0073cc;
+}
+
+/* line 102, ../sass/style.scss */
+.drupal {
+  width: 90%;
+}
+
+/* line 103, ../sass/style.scss */
+.php {
+  width: 84%;
+}
+
+/* line 104, ../sass/style.scss */
+.js {
+  width: 82%;
+}
+
+/* line 105, ../sass/style.scss */
+.html {
+  width: 87%;
+}
+
+/* line 106, ../sass/style.scss */
+.css {
+  width: 78%;
+}
+
+/* line 107, ../sass/style.scss */
+.git {
+  width: 74%;
+}
+
+/* line 108, ../sass/style.scss */
+.ux {
+  width: 50%;
+}
+
+/* line 110, ../sass/style.scss */
+.es {
+  width: 90%;
+}
+
+/* line 111, ../sass/style.scss */
+.en {
+  width: 88%;
+}
+
+/* line 112, ../sass/style.scss */
+.pt {
+  width: 50%;
+}
+
+/* line 114, ../sass/style.scss */
+.pk {
+  width: 64%;
+}
+
+/* line 115, ../sass/style.scss */
+.capoeira {
+  width: 40%;
+}
+
+/* line 116, ../sass/style.scss */
+.salsa {
+  width: 70%;
+}
+
+/* line 117, ../sass/style.scss */
+.tango {
+  width: 50%;
+}
+
+/* line 120, ../sass/style.scss */
+.experience h4, .experience h5, .experience p {
+  margin: 0 0 8px;
+}
+/* line 123, ../sass/style.scss */
+.experience li {
+  margin-bottom: 24px;
+}
+/* line 125, ../sass/style.scss */
+.experience li p {
+  line-height: 144%;
+}
+
+/* line 132, ../sass/style.scss */
+.extracurricular li {
+  margin-bottom: 12px;
 }

@@ -12,14 +12,32 @@ $susy: (
 
 $bkpt: 720px;
 
+@media print {
+  html, body, .wrap {
+    padding: 0 !important;
+    margin: 0 !important;
+  }
+  main {
+    box-shadow: none !important;
+    background-color: #fff !important;
+  }
+  .sidebar {
+    background-color: #fff !important;
+  }
+  .languages {
+    margin-bottom: 40px;
+  }
+}
+
 main {
-  @include container(12);
+  @include container(16);
 
   .content {
-    //.bio, .experience, .education, .extracurricular  {
+    //.bio, .experience, .education, .extracurricular, .hobbies  {
+    width:100%;
     @include breakpoint($bkpt) {
-      @include span(8 of 12 first);
-      .photo, .contact, .skills {
+      @include span(10 of 16 first);
+      .photo, .contact, .skills, .languages, .hobbies {
         display: none;
       }
     }
@@ -27,16 +45,16 @@ main {
   }
 
   .sidebar {
+    width:100%;
     @include breakpoint($bkpt) {
-      @include span(4 of 12 last);
+      @include span(6 of 16 last);
       display: block;
     }
     display: none;
-    background-color: #d8d8d8;
     flex: 0 1 auto;
   }
 
-  background-color: #f8f8f8;
+  background-color: #fff;
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
