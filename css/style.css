@@ -347,108 +347,122 @@ main .sidebar {
 }
 
 /* line 13, ../sass/style.scss */
+a {
+  color: #333;
+  text-decoration: none;
+}
+/* line 16, ../sass/style.scss */
+a:hover {
+  color: #000;
+}
+/* line 19, ../sass/style.scss */
+a:visited, a:active {
+  color: #666;
+}
+
+/* line 25, ../sass/style.scss */
 ul {
   list-style-type: none;
   padding: 0;
   margin: 0;
 }
 
-/* line 19, ../sass/style.scss */
+/* line 31, ../sass/style.scss */
 main {
   background-color: #f8f8f8;
   box-shadow: 10px 10px 5px #888888;
 }
 
-/* line 24, ../sass/style.scss */
+/* line 36, ../sass/style.scss */
 .content,
 .sidebar {
   padding: 20px;
 }
 
-/* line 29, ../sass/style.scss */
+/* line 41, ../sass/style.scss */
 .sidebar {
   background-color: #DBECF7;
 }
 
-/* line 33, ../sass/style.scss */
+/* line 45, ../sass/style.scss */
 h3 {
   color: #0073cc;
 }
 
-/* line 34, ../sass/style.scss */
+/* line 46, ../sass/style.scss */
 h4 {
   color: #45a3de;
 }
 
-/* line 35, ../sass/style.scss */
+/* line 47, ../sass/style.scss */
 h5 {
   color: #555;
 }
 
-/* line 37, ../sass/style.scss */
+/* line 49, ../sass/style.scss */
 section {
   padding-bottom: 10px;
 }
 
-/* line 41, ../sass/style.scss */
+/* line 53, ../sass/style.scss */
 .invisible {
   visibility: hidden;
 }
 
-/* line 45, ../sass/style.scss */
+/* line 57, ../sass/style.scss */
 .photo {
   text-align: center;
 }
-/* line 47, ../sass/style.scss */
+/* line 59, ../sass/style.scss */
 .photo img {
   width: 100%;
   border-radius: 50%;
   max-width: 240px;
 }
 @media (min-width: 720px) {
-  /* line 47, ../sass/style.scss */
+  /* line 59, ../sass/style.scss */
   .photo img {
     max-width: 180px;
   }
 }
 
-/* line 57, ../sass/style.scss */
+/* line 69, ../sass/style.scss */
 .bio {
   font-family: "Consolas", "Menlo", "Courier", monospace;
   text-align: center;
 }
 @media (min-width: 720px) {
-  /* line 57, ../sass/style.scss */
+  /* line 69, ../sass/style.scss */
   .bio {
     text-align: left;
   }
 }
-/* line 63, ../sass/style.scss */
+/* line 75, ../sass/style.scss */
 .bio .name {
   font-size: 2.4em;
   font-weight: normal;
   margin: 0;
 }
-/* line 68, ../sass/style.scss */
+/* line 80, ../sass/style.scss */
 .bio .title {
   font-size: 2em;
   font-weight: bold;
   margin: 0;
 }
 
-/* line 76, ../sass/style.scss */
+/* line 88, ../sass/style.scss */
 .contact li {
   line-height: 2em;
   font-size: 90%;
 }
-/* line 80, ../sass/style.scss */
+/* line 92, ../sass/style.scss */
 .contact i.fa {
   font-size: 1.5em;
   width: 28px;
   text-align: center;
 }
 
-/* line 90, ../sass/style.scss */
+/* line 102, ../sass/style.scss */
 .skills li,
 .languages li,
 .hobbies li {
@@ -456,7 +470,7 @@ section {
   color: #fff;
   margin: 4px 0;
 }
-/* line 95, ../sass/style.scss */
+/* line 107, ../sass/style.scss */
 .skills span,
 .languages span,
 .hobbies span {
@@ -465,90 +479,90 @@ section {
   background-color: #0073cc;
 }
 
-/* line 102, ../sass/style.scss */
+/* line 114, ../sass/style.scss */
 .drupal {
   width: 90%;
 }
 
-/* line 103, ../sass/style.scss */
+/* line 115, ../sass/style.scss */
 .php {
   width: 84%;
 }
 
-/* line 104, ../sass/style.scss */
+/* line 116, ../sass/style.scss */
 .js {
   width: 82%;
 }
 
-/* line 105, ../sass/style.scss */
+/* line 117, ../sass/style.scss */
 .html {
   width: 87%;
 }
 
-/* line 106, ../sass/style.scss */
+/* line 118, ../sass/style.scss */
 .css {
   width: 78%;
 }
 
-/* line 107, ../sass/style.scss */
+/* line 119, ../sass/style.scss */
 .git {
   width: 74%;
 }
 
-/* line 108, ../sass/style.scss */
+/* line 120, ../sass/style.scss */
 .ux {
   width: 50%;
 }
 
-/* line 110, ../sass/style.scss */
+/* line 122, ../sass/style.scss */
 .es {
   width: 90%;
 }
 
-/* line 111, ../sass/style.scss */
+/* line 123, ../sass/style.scss */
 .en {
   width: 88%;
 }
 
-/* line 112, ../sass/style.scss */
+/* line 124, ../sass/style.scss */
 .pt {
   width: 50%;
 }
 
-/* line 114, ../sass/style.scss */
+/* line 126, ../sass/style.scss */
 .pk {
   width: 64%;
 }
 
-/* line 115, ../sass/style.scss */
+/* line 127, ../sass/style.scss */
 .capoeira {
   width: 40%;
 }
 
-/* line 116, ../sass/style.scss */
+/* line 128, ../sass/style.scss */
 .salsa {
   width: 70%;
 }
 
-/* line 117, ../sass/style.scss */
+/* line 129, ../sass/style.scss */
 .tango {
   width: 50%;
 }
 
-/* line 120, ../sass/style.scss */
+/* line 132, ../sass/style.scss */
 .experience h4, .experience h5, .experience p {
   margin: 0 0 8px;
 }
-/* line 123, ../sass/style.scss */
+/* line 135, ../sass/style.scss */
 .experience li {
   margin-bottom: 24px;
 }
-/* line 125, ../sass/style.scss */
+/* line 137, ../sass/style.scss */
 .experience li p {
   line-height: 144%;
 }
 
-/* line 132, ../sass/style.scss */
+/* line 144, ../sass/style.scss */
 .extracurricular li {
   margin-bottom: 12px;
 }
