@@ -5,9 +5,9 @@
 @import "grids";
 
 body {
-  @include breakpoint($bkpt) {
-    padding: 20px;
-  }
+  font-family: Garamond, serif;
+  background-color: #015b9f;
+  padding: 16px;
 }
 
 a {
@@ -28,23 +28,46 @@ ul {
   margin:0;
 }
 
+h1, h2, h3, h4, h5, h6 {
+  font-family: Helvetica, sans-serif;
+  font-weight: normal;
+}
+
+h3 {
+  margin:20px 0 10px 0;
+  color: #000;
+  font-size: 1.5em;
+}
+h4 {
+  color: #015b9f;
+  font-size: 1.2em;
+}
+h5 {
+  color: #000;
+  font-size: .8em;
+}
+
 main {
-  background-color: #f8f8f8;
-  box-shadow: 10px 10px 5px #888888;
+  color: #333;
+  background-color: #fff;
 }
 
 .content,
 .sidebar {
   padding:20px;
 }
+.content {
+  a {
 
-.sidebar {
-  background-color: #DBECF7;
+  }
 }
-
-h3 { color: #0073cc; }
-h4 { color: #45a3de; }
-h5 { color: #555; }
+.sidebar {
+  color: #fff;
+  background-color: #f8931d;
+  h3 {
+    color: #015b9f;
+  }
+}
 
 section {
   padding-bottom:10px;
@@ -67,19 +90,18 @@ section {
 }
 
 .bio {
-  font-family: "Consolas", "Menlo", "Courier", monospace;
   text-align: center;
   @include breakpoint($bkpt) {
     text-align: left;
   }
   .name {
-    font-size: 2.4em;
-    font-weight: normal;
+    font-size: 3em;
     margin:0;
+    color:#f8931d;
   }
   .title {
-    font-size: 2em;
-    font-weight: bold;
+    font-size: 1.33em;
+    color:#019da6;
     margin: 0;
   }
 }
@@ -89,10 +111,22 @@ section {
     line-height: 2em;
     font-size: 90%;
   }
-  i.fa {
+  .fa {
     font-size:1.5em;
     width:28px;
     text-align: center;
+    color: #eee;
+  }
+}
+
+.contact--social-media {
+  padding-top:10px;
+  a {
+    padding-left:10px;
+  }
+  .fa {
+    font-size:2em;
+    color:#000;
   }
 }
 
@@ -100,33 +134,35 @@ section {
 .languages,
 .hobbies {
   li {
-    background-color: #55b3ee;
+    width:100%;
+    // background-color: rgba(1,157,166,0.33);
     color: #fff;
     margin: 4px 0;
   }
   span {
     display: block;
-    padding: 5px 10px;
-    background-color: #0073cc;
+    padding: 4px 8px;
+    box-sizing: border-box;
+    background-color: #019da6;
   }
 }
 
-.drupal { width:90%; }
-.php { width:84%; }
-.js { width:82%; }
-.html { width:87%; }
-.css { width:78%; }
-.git { width:74%; }
-.ux { width:50%; }
+.drupal { width:100%; }
+.php { width:90%; }
+.git { width:85%; }
+.html { width:80%; }
+.css { width:75%; }
+.js { width:70%; }
+.mysql { width:65%; }
 
-.es { width: 90% }
-.en { width: 88% }
+.es { width: 100% }
+.en { width: 90% }
 .pt { width: 50% }
 
-.pk { width: 64% }
-.capoeira { width: 40% }
-.salsa { width: 70% }
-.tango { width: 50% }
+.salsa { width: 100% }
+.pk { width: 90% }
+.tango { width: 80% }
+.capoeira { width: 70% }
 
 .experience {
   h4, h5, p {
